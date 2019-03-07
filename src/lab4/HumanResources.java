@@ -28,7 +28,7 @@ public class HumanResources {
         reportService.clearReport();
         reportService.addData("You have received an resume for an open position at your company. \n\n");
         reportService.addData("Please enter name and SSN of the candidate. \n\n");
-        reportService.addData("First name: \n");
+        reportService.addData("First name: ");
         reportService.outputReport();
         firstName = keyboard.nextLine();
         return firstName;
@@ -36,7 +36,7 @@ public class HumanResources {
     
     public String getLastName() {
         reportService.clearReport();
-        reportService.addData("Last name: \n");
+        reportService.addData("Last name: ");
         reportService.outputReport();
         lastName = keyboard.nextLine();
         return lastName;
@@ -44,7 +44,7 @@ public class HumanResources {
     
     public String getSSN() {
         reportService.clearReport();
-        reportService.addData("SSN: \n");
+        reportService.addData("SSN: ");
         reportService.outputReport();
         ssn = keyboard.nextLine();
         return ssn;
@@ -54,12 +54,12 @@ public class HumanResources {
         boolean endLoop = false;
         reportService.clearReport();
         reportService.addData("<HR representative>  Resume has been reviewed. \n");
-        reportService.addData("<HR representative>  Is the candidate viable for interview? (Y/N) \n");
+        reportService.addData("<HR representative>  Is the candidate viable for interview? (Y/N) ");
         reportService.outputReport();
         action = toUpperCase(keyboard.nextLine().charAt(0));
         if (action == 'N') {
             reportService.clearReport();
-            reportService.addData("<HR representative>  This candidate is not viable.  Discontinue vetting of candidate. \n");
+            reportService.addData("<HR representative>  This candidate is not viable.  Discontinue vetting of candidate. ");
             reportService.outputReport();
             endLoop = true;
         }
@@ -68,19 +68,19 @@ public class HumanResources {
     
     public void RouteResume() {
         reportService.clearReport();
-        reportService.addData("<HR representative>  Resume is routed to application area for review. \n");
+        reportService.addData("<HR representative>  Resume is routed to application area for review. ");
         reportService.outputReport();
     }
     
     public void SetUpInterview() {
         reportService.clearReport();
-        reportService.addData("<HR representative>  Candidate is contacted and interview is arranged. \n");
+        reportService.addData("<HR representative>  Candidate is contacted and interview is arranged. ");
         reportService.outputReport();
     }
     
     public void ExtendOffer() {
         reportService.clearReport();
-        reportService.addData("<HR representative>  Candidate is contacted and offer is extended. \n");
+        reportService.addData("<HR representative>  Candidate is contacted and offer is extended. ");
         reportService.outputReport();
     }
     
@@ -88,12 +88,12 @@ public class HumanResources {
         boolean endLoop = false;
         reportService.clearReport();
         reportService.addData("<HR representative>  Candidate has been fully vetted and considered. \n");
-        reportService.addData("<HR representative>  Would you like to examine another candidate? (Y/N) \n");
+        reportService.addData("<HR representative>  Would you like to examine another candidate? (Y/N) ");
         reportService.outputReport();
         action = toUpperCase(keyboard.nextLine().charAt(0));
         if (action == 'N') {
             reportService.clearReport();
-            reportService.addData("<HR representative>  No more candidates will be considered.  Hiring process is complete. \n");
+            reportService.addData("<HR representative>  No more candidates will be considered.  Hiring process is complete. ");
             reportService.outputReport();
             endLoop = true;
         }

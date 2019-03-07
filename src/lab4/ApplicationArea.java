@@ -25,12 +25,12 @@ public class ApplicationArea {
         boolean endLoop = false;
         reportService.clearReport();
         reportService.addData("<Application contact>  Resume has been reviewed. \n");
-        reportService.addData("<Application contact>  Would you like to interview candidate? (Y/N) \n");
+        reportService.addData("<Application contact>  Would you like to interview candidate? (Y/N) ");
         reportService.outputReport();
         action = toUpperCase(keyboard.nextLine().charAt(0));
         if (action == 'N') {
             reportService.clearReport();
-            reportService.addData("<Application contact>  This candidate is not viable.  Discontinue vetting of candidate. \n");
+            reportService.addData("<Application contact>  This candidate is not viable.  Discontinue vetting of candidate. ");
             reportService.outputReport();
             endLoop = true;
         }
@@ -39,13 +39,13 @@ public class ApplicationArea {
     
     public void RequestInterview() {
         reportService.clearReport();
-        reportService.addData("<Application contact>  Interview request has been sent to HR. \n");
+        reportService.addData("<Application contact>  Interview request has been sent to HR. ");
         reportService.outputReport();
     }
     
     public void ConductInterview() {
         reportService.clearReport();
-        reportService.addData("<Application contact>  Candidate is interviewed by application area contact. \n");
+        reportService.addData("<Application contact>  Candidate is interviewed by application area contact. ");
         reportService.outputReport();
     }
     
@@ -53,12 +53,12 @@ public class ApplicationArea {
         boolean endLoop = false;
         reportService.clearReport();
         reportService.addData("<Application contact>  Interview is complete. \n");
-        reportService.addData("<Application contact>  Would you recommend to hire candidate? (Y/N) \n");
+        reportService.addData("<Application contact>  Would you recommend to hire candidate? (Y/N) ");
         reportService.outputReport();
         action = toUpperCase(keyboard.nextLine().charAt(0));
         if (action == 'N') {
             reportService.clearReport();
-            reportService.addData("<Application contact>  This candidate is not viable.  Discontinue vetting of candidate. \n");
+            reportService.addData("<Application contact>  This candidate is not viable.  Discontinue vetting of candidate. ");
             reportService.outputReport();
             endLoop = true;
         }

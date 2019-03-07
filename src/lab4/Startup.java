@@ -34,9 +34,9 @@ public class Startup {
          * Human Resources      If offer accepted, set up candidate as new employee and end candidate hiring process
          * Human Resources      If new employee not hired, process next resume
          * 
-         * To implement this process flow, classes for HumanResources and ApplicationArea will be 
-         * required at a minimum.  Note:  for this exercise I am not doing full edit checking
-         * of input values.  Assumption is that valid information is entered.
+         * To implement this process flow, classes for HumanResources, ApplicationArea and Candidate will be 
+         * required at a minimum.  Note:  for this exercise I am not doing full edit checking of input
+         * values.  Assumption is that valid information is entered.
          */
  
         boolean endUserLoop = false;

@@ -24,12 +24,12 @@ public class Candidate {
         boolean endLoop = false;
         reportService.clearReport();
         reportService.addData("<Candidate>  Job offer has been extended. \n");
-        reportService.addData("<Candidate>  Do you accept? (Y/N) \n");
+        reportService.addData("<Candidate>  Do you accept? (Y/N) ");
         reportService.outputReport();
         action = toUpperCase(keyboard.nextLine().charAt(0));
         if (action == 'N') {
             reportService.clearReport();
-            reportService.addData("<Candidate>  Offer was declined by candidate.  Discontinue vetting of candidate. \n");
+            reportService.addData("<Candidate>  Offer was declined by candidate.  Discontinue vetting of candidate. ");
             reportService.outputReport();
             endLoop = true;
         }
