@@ -140,7 +140,8 @@ public class Employee {
     // allowed through validation. Throwing ane exception is the best
     // practice when validation fails. Don't do a System.out.println()
     // to display an error message -- not the job of this class!
-    public void setFirstName(String firstName) {
+    // make this method private because it is called from within this class
+    private void setFirstName(String firstName) {
         if (firstName == null || firstName.isEmpty()) {
             throw new IllegalArgumentException("first name is required");
         }
@@ -151,7 +152,8 @@ public class Employee {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    // make this method private because it is called from within this class
+    private void setLastName(String lastName) {
         if (lastName == null || lastName.isEmpty()) {
             // throw exception instead of printing error message
             //System.out.println("last name is required");
@@ -164,7 +166,8 @@ public class Employee {
         return ssn;
     }
 
-    public void setSsn(String ssn) {
+    // make this method private because it is called from within this class
+    private void setSsn(String ssn) {
         if (ssn == null || ssn.length() < 9 || ssn.length() > 11) {
             // throw exception instead of printing error message
             //System.out.println("ssn is required and must be "

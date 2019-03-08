@@ -1,8 +1,5 @@
 package lab4;
 
-import static java.lang.Character.toUpperCase;
-import java.util.Scanner;
-
 /**
  * This class is the startup class for the program. But together with the other
  * classes provided it is not a particularly good simulation of the real world.
